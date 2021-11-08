@@ -388,4 +388,95 @@ body {
 
 #block {
   grid-column: 1/3;
+}
+
+.main-form {
+  background-color: whitesmoke;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding: 1.5em;
+  text-align: center;
+  border-radius: 25px;
+  border: black solid 2px;
+}
+@media (max-width: 400px) {
+  .main-form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+.main-form__header {
+  text-shadow: 4px -1px 27px rgba(0, 0, 0, 0.6);
+}
+
+.form {
+  color: black;
+}
+.form__fieldset {
+  width: 100%;
+  border-radius: 10px;
+  border: solid wheat 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 550px) {
+  .form__fieldset {
+    display: block;
+  }
+}
+@media (max-width: 425px) {
+  .form__fieldset {
+    border: none;
+  }
+}
+.form__fieldset-legend {
+  text-align: left;
+  background-color: wheat;
+  margin-left: 1em;
+  border-radius: 5px;
+  border: solid 2px black;
+  padding: 0.5em;
+  text-shadow: 4px -1px 27px rgba(0, 0, 0, 0.6);
+}
+.form__label {
+  margin-bottom: 3em;
+  width: auto;
+}
+.form__input {
+  width: 50%;
+  height: 3em;
+  padding: 2px;
+  margin-bottom: 5px;
+  border: none;
+  outline: 0;
+  background-color: whitesmoke;
+  border-bottom: 1px solid black;
+}
+.form__input-image {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.form__button {
+  width: 6em;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-left: 2em;
+  cursor: pointer;
+  border-radius: 5px;
+  border: black solid 2px;
+  background-color: wheat;
+}
+.form__button:hover {
+  background-color: black;
+  color: wheat;
+  border: wheat 2px solid;
+  text-shadow: -1px -5px 50px wheat;
+  transition: 0.3s;
+}
+
+#block {
+  grid-column: 1/3;
 }/*# sourceMappingURL=main.css.map */
