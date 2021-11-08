@@ -5,9 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alta</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <h1>Alta</h1>
+    <header class="main-header">
+    <nav class="nav-bar__alta">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-form">
+
+        <header class="main-form__header">
+            <h1 class="main-form__header-h1"> Alta de Autos</h1>
+        </header>
+    
+        <form method="post" class="form">
+
+            <fieldset class="form__fieldset">
+                <legend class="form__fieldset-legend"> Datos del automotor </legend>
+            
+                <div class="form__label">
+                    <label for="Marca" >Marca:*</label><br>
+                    <select class="form__input" id="Marca" name="Marca" required>
+                        <option value="">- Seleccionar -</option>
+                        <option value="Ty" >Toyota</option>
+                        <option value="Ch">Chevrolet</option>
+                        <option value="Fd">Ford</option>
+                        <option value="Rn">Renault</option>
+                    </select>
+                </div>
+
+                <div class="form__label">
+                    <label for="modelo" >Modelo:*</label><br>
+                    <input class="form__input" id="modelo" name="modelo" required placeholder="Ej: Cruze" >
+                </div>
+
+                <div class="form__label">
+                    <label  for="año" >Año:*</label><br>
+                    <input class="form__input" id="año" name="año" required type="date" min="2015-01-01" max="2022-12-31" >
+                </div>
+
+                <div class="form__label">
+                    <label for="precio" >Precio:*</label><br>
+                    <input class="form__input" id="precio" type="number" name="precio" required placeholder="$$$$" min="100000" >
+                </div>
+
+                <div class="form__label">
+                    <label for="precio" >Stock:*</label><br>
+                    <input class="form__input" id="stock" type="number" name="stock" required placeholder="Ej: 1" min="1" >
+                </div>
+
+                <div class="form__label">
+                    <label for="nuevo/usado" > 0 Km/Usado:*</label><br>
+                    <select class="form__input" id="nuevo/usado" name="nuevo/usado" required>
+                        <option value="">- Seleccionar -</option>
+                        <option value="0 K" >0 Km</option>
+                        <option value="Usado">Usado</option>
+
+                    </select>
+                </div>
+
+                <div class="form__label" id="block">
+                    <label for="detalles">Detalles:*</label><br>
+                    <textarea class="form__input" placeholder="Estado del automotor, kilometros..." 
+                id="detalles" name="detalles" required></textarea>
+                </div >
+                
+                
+
+                <div class="form__label-image">
+                    <label for="imagen">Fotos:*</label>
+                    <input class="form__input-image" type="file" name="imagen" id="imagen" required >
+                </div>
+            </fieldset>
+
+            <div class="form__label">
+                <input type="checkbox" name="envío" id="envío" value="si" checked>
+                <label for="envío">Envío sin cargo</label>
+            </div>
+
+            <div class="form__required">
+                <p>* : Campo obligatorio</p>
+            </div>
+
+            <div class="form__label-button">
+                <button class="form__button">Iniciar</button>
+                <button class="form__button" type="reset">Restablecer</button>
+            </div>
+
+        </form>    
+    </main>
 </body>
 </html>

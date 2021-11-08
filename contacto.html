@@ -1,32 +1,67 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <header class="main-header">
-        <nav class="nav-bar">
-            <ul class="nav-bar__nav-list">
-                <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
-                </li>
-                <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
-                </li>
-                <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alta</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    
+    <body>
+        <header class="main-header">
+        <nav class="nav-bar__alta">
+                <ul class="nav-bar__nav-list">
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                    </li>
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main class="main-form">
+    
+            <header class="main-form__header">
+                <h1 class="main-form__header-h1"> Contacto</h1>
+            </header>
+        
+            <form method="post" class="form">
 
-    <h1>Contacto</h1>
+                <div class="form__fieldset">
+    
+                    <div class="form__label">
+                        <label for="Nombre" >Nombre:*</label><br>
+                        <input class="form__input" id="modelo" name="Nombre" required>
+                    </div>
+    
+                    <div class="form__label">
+                        <label for="e-mail" >e-mail:*</label><br>
+                        <input class="form__input" id="e-mail" type="email" name="stock" required >
+                    </div>
+    
+                    <div class="form__label" id="block">
+                        <label for="detalles">Comentarios:*</label><br>
+                        <textarea class="form__input"
+                    id="Comentarios" name="Comentarios" required></textarea>
+                    </div >
+                    
+                </div>
+
+                <div class="form__label-button">
+                    <button class="form__button">Enviar</button>
+                    <button class="form__button" type="reset">Restablecer</button>
+                </div>
+    
+            </form>    
+        </main>
 </body>
 </html>
