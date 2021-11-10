@@ -4,7 +4,7 @@
 *******************************/
 .main-header {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     @media (max-width: 768px) {
 
@@ -190,8 +190,8 @@
 
     @media (max-width: 470px){
 
-        &__logo-connecticus{
-            display: none;
+        &__logo-container{
+            display:none;
         }
     }
 }

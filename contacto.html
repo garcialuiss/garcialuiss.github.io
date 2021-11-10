@@ -10,7 +10,10 @@
     
     <body>
         <header class="main-header">
-        <nav class="nav-bar__alta">
+
+            <input type="checkbox" name="#" id="menu">
+    
+            <nav class="nav-bar">
                 <ul class="nav-bar__nav-list">
                     <li class="nav-bar__nav-item">
                         <a class="nav-bar__nav-link" href="index.html">Inicio</a>
@@ -26,6 +29,26 @@
                     </li>
                 </ul>
             </nav>
+            <div class="search-bar">
+                <div class="search-bar__logo-container">
+                    <img class="search-bar__logo-connecticus" src="img/logo_connecticus.png" alt="logo connecticus">
+                </div>
+                <form class="search-bar__form-container">
+                    <label class="search-bar__form-label" for="busqueda"></label>
+                    <input class="search-bar__form-search" id="busqueda" type="search" placeholder="Buscar" >
+                    <input class="search-bar__form-submit" type="image" src="img/lupa.png" alt="lupa" >
+                </form>
+                <div class="search-bar__carrito-container">
+                    <input class="search-bar__logo-compra" type="image" src="img/carrito-compra.png" alt="carrito">
+                </div>
+                <div class="menu-toggle">
+                    <label class="menu-toggle__label" for="menu">
+                        <span class="menu-toggle__top-bread"></span>
+                        <span class="menu-toggle__meat"></span>
+                        <span class="menu-toggle__bottom-bread"></span>
+                    </label>
+                </div>
+            </div>
         </header>
     
         <main class="main-form">
