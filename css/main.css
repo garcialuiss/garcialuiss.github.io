@@ -294,7 +294,7 @@ body {
 .section-cards__header {
   width: 100%;
   padding-bottom: 14em;
-  background-image: url(../../img/flota-autos.png);
+  background-image: url(../img/flota-autos.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
